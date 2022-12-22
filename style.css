@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #32ccbc !important;
+  color: #fff !important;
+  font-family: "Roboto", sans-serif !important;
+}
+
+.navbar-brand {
+  font-size: 1.5rem !important;
+}
+
+.location {
+  margin: 10px 20px;
+  cursor: pointer;
+}
+
+#top {
+  text-align: center;
+}
+
+.time,
+.city_name,
+.img,
+.temp,
+.weather-desc,
+.humidity {
+  padding: 2px 0;
+}
+
+.city_name {
+  color: #30655d;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.temp {
+  font-size: 4rem;
+}
+.weather-desc,
+.humidity,
+.wind-speed {
+  font-size: 1.1rem !important;
+}
+
+.city_name h3 {
+  color: #fff !important;
+}
+
+.time span {
+  font-size: 2rem;
+}

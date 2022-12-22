@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheather App - Vanilla JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/60525a8e2f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg" style="background-color: #32ccbc">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="color: #fff">Wheather App</a>
+          <form class="d-flex" id="form">
+            <i
+              class="location fa-solid fa-location-crosshairs"
+              onclick="getLocation()"
+            ></i>
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Enter City"
+              id="city"
+            />
+            <button
+              class="btn btn-outline-success"
+              style="color: #fff"
+              id="btn"
+            >
+              Enter
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <section id="top">
+      <!-- <button class="btn btn-outline-success" type="Submit">Current Location</button> -->
+      <!-- <i class="fa-solid fa-location-crosshairs"></i> -->
+      <div class="time">
+        <!-- <span>Saturday, </span><span>October </span><span>01, </span>
+        <span>2023</span> -->
+      </div>
+      <!-- Friday, September 30, 2023 -->
+      <div class="wheather">
+        <div class="city_name">
+          <h3>Click Icon To Get Weather Details Of Your Location</h3>
+        </div>
+        <!-- London, GB -->
+        <div class="img"></div>
+        <!-- img -->
+        <div class="temp"></div>
+        <!-- 11&deg; C -->
+        <div class="weather-desc"></div>
+        <!-- Rain -->
+        <div class="humidity"></div>
+        <!-- Humadity 93% -->
+        <div class="wind-speed"></div>
+        <!-- Wind Speed 10 m/s -->
+      </div>
+    </section>
+
+    <section id="bottom"></section>
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="script.js"></script>
+  </body>
+</html>
